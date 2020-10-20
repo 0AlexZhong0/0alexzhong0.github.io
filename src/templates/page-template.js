@@ -1,16 +1,16 @@
 // @flow strict
-import React from 'react';
-import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
-import Sidebar from '../components/Sidebar';
-import Page from '../components/Page';
-import { useSiteMetadata } from '../hooks';
-import type { MarkdownRemark } from '../types';
+import React from "react";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import Sidebar from "../components/Sidebar";
+import Page from "../components/Page";
+import { useSiteMetadata } from "../hooks";
+import type { MarkdownRemark } from "../types";
 
 type Props = {
   data: {
-    markdownRemark: MarkdownRemark
-  }
+    markdownRemark: MarkdownRemark,
+  },
 };
 
 const PageTemplate = ({ data }: Props) => {
@@ -22,7 +22,7 @@ const PageTemplate = ({ data }: Props) => {
   const socialImageUrl = typeof socialImage !== 'undefined' ? socialImage['publicURL'] : undefined;
 
   return (
-    <Layout title={`${pageTitle} - ${siteTitle}`} description={metaDescription} socialImage={socialImageUrl} >
+    <Layout title={`${pageTitle} - ${siteTitle}`} description={metaDescription} socialImage={socialImageUrl}>
       <Sidebar />
       <Page title={pageTitle}>
         <div dangerouslySetInnerHTML={{ __html: pageBody }} />
@@ -40,7 +40,6 @@ export const query = graphql`
         title
         date
         description
-        socialImage
       }
     }
   }
