@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  url: 'zhongnotes.netlify.app',
+  url: 'https://zhongnotes.netlify.app',
   pathPrefix: '/',
   title: 'ZhongNotes',
   subtitle: 'Blog of Alex Zhong, knowledge repository of a young software engineer.',
@@ -29,15 +29,15 @@ module.exports = {
     photo: '/photo.jpg',
     bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
     contacts: {
-      email: '',
-      facebook: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
+      email: '0alexzhong0@gmail.com',
+      facebook: '',
+      telegram: '',
+      twitter: '0alexzhong0',
+      github: '0alexzhong0',
       rss: '',
       vkontakte: '',
-      linkedin: '#',
-      instagram: '#',
+      linkedin: 'alex-zhong-b60417181',
+      instagram: '',
       line: '',
       gitlab: '',
       weibo: '',
