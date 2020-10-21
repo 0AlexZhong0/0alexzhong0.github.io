@@ -7,7 +7,7 @@ module.exports = {
   subtitle: 'Blog of Alex Zhong, knowledge repository of a young software engineer.',
   copyright: '© All rights reserved.',
   disqusShortname: '',
-  postsPerPage: 4,
+  postsPerPage: 8,
   googleAnalyticsId: 'UA-73379983-2',
   useKatex: false,
   menu: [
@@ -19,15 +19,15 @@ module.exports = {
       label: 'About me',
       path: '/pages/about'
     },
-    {
-      label: 'Contact me',
-      path: '/pages/contacts'
-    }
+    // {
+    //   label: 'Contact me',
+    //   path: '/pages/contacts'
+    // }
   ],
   author: {
     name: 'Alex Zhong',
     photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    bio: 'Knowledge repository of a young software engineer.',
     contacts: {
       email: '0alexzhong0@gmail.com',
       facebook: '',
