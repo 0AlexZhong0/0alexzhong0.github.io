@@ -4,7 +4,7 @@
   "description": "Blog of Alex Zhong",
   "main": "n/a",
   "scripts": {
-    "develop": "npm run clean && gatsby develop",
+    "dev": "concurrently \"npx netlify-cms-proxy-server\" \"gatsby develop\"",
     "build": "npm run clean && gatsby build",
     "deploy": "npm run clean && gatsby build && gh-pages -d public -b master",
     "clean": "rimraf .cache public",
@@ -93,7 +93,7 @@
     "babel-jest": "26.5.2",
     "babel-preset-gatsby": "0.5.14",
     "browserslist": "4.14.5",
-    "concurrently": "5.3.0",
+    "concurrently": "^5.3.0",
     "eslint": "7.11.0",
     "eslint-config-airbnb-base": "14.2.0",
     "eslint-plugin-import": "2.22.1",

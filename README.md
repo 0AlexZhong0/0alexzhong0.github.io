@@ -46,11 +46,7 @@ To start using the Netlify CMS locally, run the following commands, read more on
 
 ```bash
 # run from the root directory of the project
-# in one shell session
-npx netlify-cms-proxy-server
-
-# then another shell, run
-npm run develop
+npm run dev
 ```
 
 #### Open the source code and start editing!
