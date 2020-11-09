@@ -1,14 +1,15 @@
 'use strict';
 
 module.exports = {
-  url: 'https://zhongnotes.netlify.app',
+  url: 'https://zhongnotes.com',
   pathPrefix: '/',
   title: 'ZhongNotes',
   subtitle: 'Blog of Alex Zhong, knowledge repository of a young software engineer.',
-  copyright: '© All rights reserved.',
+  copyright: '© All rights reserved by Alex Zhong.',
   disqusShortname: '',
   postsPerPage: 8,
-  googleAnalyticsId: 'UA-73379983-2',
+  // TODO: put my google analytics id here
+  googleAnalyticsId: '',
   useKatex: false,
   menu: [
     {
