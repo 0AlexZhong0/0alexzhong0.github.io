@@ -4,7 +4,7 @@ title: Unit Test Now - Part One
 slug: unit-test-now-part-one
 socialImage: /media/image-2.jpg
 draft: false
-date: 2020-11-07T10:17:48.445Z
+date: 2020-10-23T10:17:48.445Z
 description: First of the two-part Unit Test Now series where we give a
   high-level overview of common unit test scenarios and we provide some examples
   to help you get started today!

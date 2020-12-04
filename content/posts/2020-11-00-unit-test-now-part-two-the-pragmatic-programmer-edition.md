@@ -4,7 +4,7 @@ title: Unit Test Now - Part Two, the Pragmatic Programmer Edition
 slug: unit-test-now-part-two
 socialImage: /media/image-4.jpg
 draft: false
-date: 2020-11-07T10:27:49.450Z
+date: 2020-11-00T10:27:49.450Z
 description: Last part of the Unit Test Now Series. We will go through the best
   practices and principles in the all-time classic the Pragmatic Programmer. The
   principles have been tried and tested and it enables programmers to write
