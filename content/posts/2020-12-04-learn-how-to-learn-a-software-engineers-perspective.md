@@ -3,7 +3,7 @@ template: post
 title: Learn how to learn - a software engineer's perspective
 slug: learn-how-to-learn
 socialImage: /media/element5-digital-oycl7y4y0bk-unsplash.jpg
-draft: true
+draft: false
 date: 2020-12-04T10:00:48.813Z
 description: Learning is quintessential, and it has become essential and it is
   more important than ever before. Yet I have had a countless number of
