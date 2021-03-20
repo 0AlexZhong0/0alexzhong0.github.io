@@ -8,8 +8,7 @@ module.exports = {
   copyright: '© All rights reserved by Alex Zhong.',
   disqusShortname: '',
   postsPerPage: 8,
-  // TODO: put my google analytics id here
-  googleAnalyticsId: '',
+  googleAnalyticsId: 'UA-180766639-1',
   useKatex: false,
   menu: [
     {
