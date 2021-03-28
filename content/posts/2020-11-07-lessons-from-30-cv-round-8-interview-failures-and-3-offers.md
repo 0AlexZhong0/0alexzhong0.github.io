@@ -1,6 +1,6 @@
 ---
 template: post
-title: Lessons from 30 CV-round, 8 interview failures and 3 offers
+title: Lessons From 30 CV-round, 8 Interview Failures And 3 Offers
 slug: lessons-from-job-applications-failures
 socialImage: /media/42-line-bible.jpg
 draft: false
@@ -12,18 +12,21 @@ tags:
   - career
   - self-development
 ---
+
 First and foremost, I want to thank all those people who have provided me support and guidance along the way, no matter how small or big; I want to appreciate you guys sincerely with all my hearts.
 
 In this post, I will talk about the takeaway lessons first; then, I will summarise the mistakes that I have made. I hope this post will give some tips to those who are still applying for roles or that are seeking specific advice to improve themselves in the job application process.
 
 # Luck plays a role
+
 I have to admit, it has been extraordinarily fortunate and luckily for me to even have those X initial online challenges, Y phone interviews and three offers. Because I applied to companies like Microsoft twice in the same year, and I could not pass the initial CV rounds. However, I got to the phone interview stage with Google, which I thought I did well, but unfortunately, they were not allowed to give me feedback. Towards the end of October, when almost all companies have finished recruiting, including the ones I like the most. I was about to give up. Then through some tremendous will, I forced myself to send out two more applications where at the end I got offers from both of them. Then on the same day, a startup founder also reached out wanting to recruit me.
 
-I went from no offers between March to October, to having three offers in ONE week. If I say, there is no luck involved, and it is all about hard work, I am lying, and I will not believe it myself. Every application you sent out will have some uncontrollable factors such as the mood of the recruiter or interviewer, the strengths and capability of other candidates, the financial situation of the company and many different reasons.  Since we have zero control over these things, we must focus on the things that we can deliberately act to change and improve, such as the things I will mention below.
+I went from no offers between March to October, to having three offers in ONE week. If I say, there is no luck involved, and it is all about hard work, I am lying, and I will not believe it myself. Every application you sent out will have some uncontrollable factors such as the mood of the recruiter or interviewer, the strengths and capability of other candidates, the financial situation of the company and many different reasons. Since we have zero control over these things, we must focus on the things that we can deliberately act to change and improve, such as the things I will mention below.
 
 # Connection matters
 
 ## Why does it matter?
+
 When everyone has a good grade, concrete side projects and decent work experience and almost the same resume structure and layout, what then may set the candidates apart? I have received from my mentors, who are venture capitalists. Dozen of my friends who work in companies like Microsoft, Google, Atlassian, Xero and Delloite, etc. suggested if you have a good connection with someone influential in the hiring decisions (with the likes of the hiring manager, the interviewers or even an executive manager). You will have a higher likelihood of success than those who don't.
 
 Knowing someone in the company is good, but it matters a lot who you know. If your goal is to get hired as a software engineer in the company, then having a connection with a person in the contact centre probably doesn't help much. That's why it is essential to have relationships with people who can impact hiring decisions, and there are many reasons why it can help you significantly in the hiring process.
@@ -36,7 +39,7 @@ If you are still in the university, congratulations, it is the perfect place to 
 
 2. From clubs/events: from here, you can meet a countless number of people of your similar interests. Because you already have a common topic to discuss beforehand, it should be easier to spark up conversations and keep it rolling from there.
 
-4. From school accommodations: in the first-year accommodations, because no one knew anyone at all. You are forced to mix and mingle with others. Although it is uncomfortable at first, after you broke the ice, there is a high likelihood that they will become your closet friends for years to come. This is exactly my experience!
+3. From school accommodations: in the first-year accommodations, because no one knew anyone at all. You are forced to mix and mingle with others. Although it is uncomfortable at first, after you broke the ice, there is a high likelihood that they will become your closet friends for years to come. This is exactly my experience!
 
 ## Give, then you shall receive
 
@@ -74,8 +77,8 @@ It was very slow to pick things up at the start for me because for every aspect 
 
 Here is my example. I did not learn `React` in 1 week, two weeks or a month. It took me about 3 to 6 months to properly understand the main concepts such as [state and lifecycle](https://reactjs.org/docs/state-and-lifecycle.html), [JSX](https://reactjs.org/docs/introducing-jsx.html) and [components and props](https://reactjs.org/docs/components-and-props.html) etc. By understand, I mean I am able to identify these concepts given other people's code and to organise and use the concepts correctly in my own projects. In the official [React docs](https://reactjs.org/docs/), they have only listed twelve main concepts as of November 2020. Therefore, just like most people, I was expecting results fast, I want to be able to write a full-blown app in a week. I did build some components in a matter of days, but I did not understand the concepts, I was really just copying and pasting. I will not understand any of my code shortly after a few days. Then I became frustrated, for not be able to learn and understand quickly. But after some self-reflection, and discussing with others, I realised it is very challenging to learn a tough concept and be able to implement it in a very short amount of time, so I paced myself. I took one bite at a time. I spent about one to four weeks playing around with state and lifecycles. Another week or two getting used to the JSX syntax to build components. Finally, I gathered and integrated all the knowledge I had learnt into an application. It was a slow and long ride, but the outcome is satisfactory, and of course, there were tough times, roadblocks and setbacks, but those obstacles were what made me cherish and grateful for the results.
 
-
 # My mistakes in the job application process
+
 - **I did not tailor my resume for the role I am applying for**: I used the same resume for every company I applied for. The downfall of that is I missed addressing the key skills, attributes and characteristics that the company is looking for. The company and you will commit to each other for at least three months if you are employed, it makes sense to spend an hour or two to polish up your resume before you click "Apply".
 - ** Lack of self-reflection**: while it was great that I put in the action to get started and kept going, but when I failed along the way, I took it for granted, and I did not put in the initiatives to reflect on why I failed, how I can make a change and seek success stories and advice from others. This Lack of action was negative reinforcement, and it made failures almost inevitable because I failed to prepare, change and improve along the way.
 - **Too much individualism**: ties in with the last point, most people did not succeed on their own, they had peers. I was trying to do everything on my own; I did not know how others have done it successfully. I repeated other people's failures.
@@ -90,6 +93,7 @@ I want to contribute to an open-source project because it is a great way to work
 I created my first PR and issue in mid-October in Atlassian's `gostatsd`, and I got more interested in it the more I look into its codebase. It exposed me to different coding styles, concepts such as API context, streams, and drastically improve my ability to explore and understand an existing codebase which I believe is a vital skill for when you are onboarding to a new team. I am enjoying the process of getting involved in the open-source community, and I urge you to do so, too because it's fun, educational, and you have the potential to reach and help thousands of other people.
 
 ## Technical skill improvements
+
 (Reinvent the wheels, be it a framework, components or technologies. Explain why building from the ground up is beneficial)
 
 I believe you have heard this a million times, the best way to learn is by doing, and it cannot be more true in the world of software. My problem was I did not what sort of projects I should build, and I did not want to waste my time doing another To-Do app. Here is how I solved this problem:
@@ -103,6 +107,7 @@ I believe you have heard this a million times, the best way to learn is by doing
 The [Open Source Guide](https://opensource.guide/) website provides great advice and insights for anyone who is trying to get involved and contribute to the community.
 
 ## Social media presence
+
 (Give a quote from the book Soft Skills, why self-marketing is important)
 
 I have not paid much attention to self-marketing until I came across the best-selling book "Soft Skills: The Software Developer's Life Manual," where it devotes a whole chapter for self-marketing.
@@ -134,7 +139,6 @@ There are definitely many other things, but generally, the type of content is qu
 - Twitter
 
 I am from New Zealand. I can say Twitter is probably the least popular social media platform amongst the main ones. However, I still would like to use it because many top software engineers regularly use it, i.e. they tweet one to three times every one to two days. This platform is relatively new to me, and I am still observing what sort of content people like to post on it. My conclusion so far is the content is rather random, and it does not have a pattern, for example, a software engineer will tweet about their experience in comic con, their opinions on politics, their cats and dogs or memes. Frankly, these are the exact topics that I have no interests in talking about. At the moment, I am using Twitter as a platform to reach out to other interesting bloggers that talk about software and technology. When I came across an insightful article, in my tweet, I will ask the author questions if I had any. Otherwise, I will talk about my takeaways from the article, mention the author and share the link in the tweet.
-
 
 # Closing words
 

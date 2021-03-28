@@ -1,6 +1,6 @@
 ---
 template: post
-title: Unit Test Now - Part Two, the Pragmatic Programmer Edition
+title: Unit Test Now - Part Two, The Pragmatic Programmer Edition
 slug: unit-test-now-part-two
 socialImage: /media/image-4.jpg
 draft: false
@@ -14,6 +14,7 @@ tags:
   - unit test
   - testing
 ---
+
 ## Test is the first user of code
 
 Many of us, including me, have always thought the only reason we write tests is to ensure the correctness of the code. While that is indeed true, a more important reason is:
@@ -62,13 +63,13 @@ As you can see, there are many cases to cover for a seemingly simple function. I
 
 ### <a name='tdd-basic-cycle' style='border:none;'>The basic cycle</a>
 
-TDD suggests writing the tests upfront before we start implementing the functions. The **basic cycle** of *TDD* is:
+TDD suggests writing the tests upfront before we start implementing the functions. The **basic cycle** of _TDD_ is:
 
 > 1. **Decide** on a small piece of functionality you want to add.
-2. Write a test that will pass once that functionality is implemented.
-3. Run all tests. Verify that the **only failure** is the one you just wrote.
-4. Write the smallest amount of code needed to get the test to pass and verify that the tests now run cleanly.
-5. **Refactor** your code: see if there is a way to improve on what you just wrote (the test or the function). Make sure the tests still pass when you're done.
+> 2. Write a test that will pass once that functionality is implemented.
+> 3. Run all tests. Verify that the **only failure** is the one you just wrote.
+> 4. Write the smallest amount of code needed to get the test to pass and verify that the tests now run cleanly.
+> 5. **Refactor** your code: see if there is a way to improve on what you just wrote (the test or the function). Make sure the tests still pass when you're done.
 
 Let's put the steps into practice, suppose we want to define a function that checks if two words are anagrams, we say string `s1` is an [anagram](https://en.wikipedia.org/wiki/Anagram) of string `s2` if we can rearrange the letters of `s1` to make it the same as `s2`. Initially, we will make the function always return `false`. Here is the start:
 
@@ -123,7 +124,6 @@ class TestIsAnagram(unittest.TestCase):
 ```
 
 Right now, all three test methods will fail because the two helper functions have not been implemented. However, I hope you can see the we have modularized the `is_anagram` function which makes it clean and easy to understand. This result is exactly one of the benefits of being test-driven. It also enables us to break a non-trivial problem to smaller pieces of functions that would be easier to implement. Let's implement the helper functions.
-
 
 Firstly, let's finish `char_counter`, we will make use of a dictionary which will help us store the frequencies of each letter of the word. Then we iterate through the word character by character, increment the count if the character exists; otherwise, we insert it into the dictionary. This results in:
 

@@ -1,6 +1,6 @@
 ---
 template: post
-title: Learn how to learn - a software engineer's perspective
+title: Learn How To Learn - A Software Engineer's Perspective
 slug: learn-how-to-learn
 socialImage: /media/element5-digital-oycl7y4y0bk-unsplash.jpg
 draft: false
@@ -16,7 +16,7 @@ Software is adaptive, evolving, at an incredible astounding pace. We, as softwar
 
 # What learning methods are inefficient for me
 
-- **Read without purpose**. Reading is one of the most important things; I believe this is a statement many have come across. However, there should be a follow-up after it which is to read smartly, read with a purpose and read to understand. You should pause here and think, why are you reading this, what do you want to achieve and what is the goal? Do you agree or disagree with what I am saying? 
+- **Read without purpose**. Reading is one of the most important things; I believe this is a statement many have come across. However, there should be a follow-up after it which is to read smartly, read with a purpose and read to understand. You should pause here and think, why are you reading this, what do you want to achieve and what is the goal? Do you agree or disagree with what I am saying?
 
   I have been a victim of reading a book, a blog or a tutorial just because other people said to do so; I found that when I am just purely reading, I almost attain no information other than a brief idea of what the content is. But I continue to go through the motions and repeat the same mistakes because people said reading is so essential. Be aware. I am not saying that reading is not necessary. I am suggesting passive reading, i.e. reading with no intent or purpose is a time not wisely spent because you end up learning tiny things.
 
@@ -30,9 +30,9 @@ Before I dive into the methods that are working for me, I would love to point ou
 
 - **Identify a technology/topic/library** or the thing that I want to learn. This step sounds stupidly simple, but it helps set the direction I want to go and to focus on it.
 
-- After *setting the direction*, for example, if I want to learn about Jenkins CI/CD pipeline, I will first **follow the quick start guide** to wrap my head around it. Then I will try **integrate it with my current project/work**. Then I will want to *learn* about the **best practices**. Usually, the official documentation will contain a section for that. In general, they will have a lot of tips, what works best for me is integrating it slowly in the project. e.g. integrate one relevant best practice tip into the project is satisfactory. Whenever I try to do too much, such as applying ten or fifteen tips all at once, I would end up using none.
+- After _setting the direction_, for example, if I want to learn about Jenkins CI/CD pipeline, I will first **follow the quick start guide** to wrap my head around it. Then I will try **integrate it with my current project/work**. Then I will want to _learn_ about the **best practices**. Usually, the official documentation will contain a section for that. In general, they will have a lot of tips, what works best for me is integrating it slowly in the project. e.g. integrate one relevant best practice tip into the project is satisfactory. Whenever I try to do too much, such as applying ten or fifteen tips all at once, I would end up using none.
 
-- During the process of getting started on the new technology and integrating it to my current work or project, there will be many **challenges and problems**, and that is one of the *best opportunities* for learning. When I start searching for answers or solution of a particular issue, my brain is engaged and focused, so I pay more attention to the words I read and listen. Notice the difference, here I am reading with a purpose and a goal in my, that is, I want to find the necessary information that can solve my problem. To do that, I first have to understand the problem I have, that often consists of more than half of the process.
+- During the process of getting started on the new technology and integrating it to my current work or project, there will be many **challenges and problems**, and that is one of the _best opportunities_ for learning. When I start searching for answers or solution of a particular issue, my brain is engaged and focused, so I pay more attention to the words I read and listen. Notice the difference, here I am reading with a purpose and a goal in my, that is, I want to find the necessary information that can solve my problem. To do that, I first have to understand the problem I have, that often consists of more than half of the process.
 
 - (Extra step) Read about what is happening under the hood from the official doc or a book. When I know how to come up with a workable example, and I understand why it works, a.k.a the theory behind it, I will retain this information for a long time. However, under most circumstances, after the previous few steps, my brain usually cannot accomplish this anymore. I have to take a day of a break at least before I dive deep into the theoretical concepts. Hence this step is the next level.
 
@@ -46,13 +46,12 @@ First, the external factors are very important, e.g. the time pressure, the pres
 
 - **Read and roughly understand the concept**. Don't spend too much time here; I don't understand the concepts unless I know how to apply it, so read to the extent that you understand the idea and you know how it works, which leads to the next step.
 
-- **Find and solve problems**, lots of problems. Mathematics is a prime example; I will have no luck knowing how to do integration by parts if I only read, I will have to keep solving problems until I become accustomed and used to the concept. However, only solving problems does you no good neither, you need to get into the feedback loop and cycle, continuous improvement speeds up knowledge 
-retention.
+- **Find and solve problems**, lots of problems. Mathematics is a prime example; I will have no luck knowing how to do integration by parts if I only read, I will have to keep solving problems until I become accustomed and used to the concept. However, only solving problems does you no good neither, you need to get into the feedback loop and cycle, continuous improvement speeds up knowledge
+  retention.
 
 - **Get into the feedback cycle** by - 1. search for the answer yourself online, from the coursebook or other available resources. 2. get into a discussion with other people who may know the answers, reaching out only for the answers helps. Still, the knowledge exchange and the active group discussion fosters better learning. 3. post the question on the relevant forum or ask the lecturer for help when all luck runs out.
 
 - **Keep going** until the concept entirely becomes autonomous and then you can find the new thing that you would love to learn by using the same steps above.
-
 
 ## Learning practical stuff
 
@@ -66,7 +65,7 @@ A great example here will be learning how to build a navigation bar using HTML+C
 
 Here are the obstacles I have on the learning journey and the corresponding methods I think may help:
 
-- **Lack of motivation or unproductive when learning a large topic/concept**. Recently, I tried to consolidate my understanding of the SOLID principles and excellent coding practices by reading the book, *Adaptive Code via C#*. I struggled. Because how technical the book is and the vast amount of technical terminologies I have to get myself used to. To sum up, I was attempting to eat a whole elephant in one bite. Hence I became frustrated and unmotivated because of my inability to understand how it works. So a solution I have is problem decomposition and apply abstraction to the concept. In other words, take it easy and slowly, break it down into smaller concepts, for example, instead of wanting to learn the SOLID principle, say I want to know the Single Responsibility Principle (SRP). A step further will be, I want to know the decorator pattern and understand why follows the SRP.
+- **Lack of motivation or unproductive when learning a large topic/concept**. Recently, I tried to consolidate my understanding of the SOLID principles and excellent coding practices by reading the book, _Adaptive Code via C#_. I struggled. Because how technical the book is and the vast amount of technical terminologies I have to get myself used to. To sum up, I was attempting to eat a whole elephant in one bite. Hence I became frustrated and unmotivated because of my inability to understand how it works. So a solution I have is problem decomposition and apply abstraction to the concept. In other words, take it easy and slowly, break it down into smaller concepts, for example, instead of wanting to learn the SOLID principle, say I want to know the Single Responsibility Principle (SRP). A step further will be, I want to know the decorator pattern and understand why follows the SRP.
 
 - **Moving on and giving up too soon**. When I decide to learn something new or start on a new project, I get quite passionate at the start; then I lose interest in it relatively quickly. Partially, I think it is because there is not an extrinsic motivation for it. Sure, the internal reason is fundamental, but when you have a full-time job, social life, cooking, and exercising and multiple things that you may want to do. The drive you have to learn can only take you so far; The real-life responsibilities and the tasks will overtake and bury the willingness to learn and acquire new things. Next time when I try to learn something new, to help me stay on track and continue learning it in the long term; I will state why I want to learn it.
 
