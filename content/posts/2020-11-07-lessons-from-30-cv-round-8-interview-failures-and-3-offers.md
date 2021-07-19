@@ -8,9 +8,9 @@ date: 2020-11-07T10:41:53.909Z
 description: 2020 has made job-search more challenging. I had experienced many setbacks, but I took the time to reflect and take actions accordingly to improve on my weaknesses. I hope my reflections can give you some insights, too on what you are or aren't doing well.
 category: Career
 tags:
-  - life
-  - career
-  - self-development
+  - Life
+  - Career
+  - Self Development
 ---
 
 First and foremost, I want to thank all those people who have provided me support and guidance along the way, no matter how small or big; I want to appreciate you guys sincerely with all my hearts.

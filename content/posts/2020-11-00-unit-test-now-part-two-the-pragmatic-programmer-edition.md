@@ -9,10 +9,10 @@ description: Last part of the Unit Test Now Series. We will go through the best
   practices and principles in the all-time classic the Pragmatic Programmer. The
   principles have been tried and tested and it enables programmers to write
   reliable clean quality code.
-category: software
+category: Software
 tags:
-  - unit test
-  - testing
+  - Unit Test
+  - Testing
 ---
 
 ## Test is the first user of code

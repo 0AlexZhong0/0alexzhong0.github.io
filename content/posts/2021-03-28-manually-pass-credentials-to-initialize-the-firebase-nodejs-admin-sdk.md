@@ -8,11 +8,11 @@ date: 2021-03-28T03:19:07.631Z
 description: "In a non Google Cloud deployment environment, we need to pass the
   credentials manually to initialize the Firebase app, this tutorial contains
   the instructions for how to do that. "
-category: software
+category: Software
 tags:
-  - google cloud
-  - nodejs
-  - firebase
+  - Google Cloud
+  - NodeJS
+  - Firebase
 ---
 Recently, I am using Firebase admin Sdk in the server to send notifications. The [current documentation](https://firebase.google.com/docs/admin/setup#initialize_the_sdk) only has instructions for how to use the Application Default Credentials to initialize the app . While this method of firebase authentication works great in the local and the Google Cloud deployment environment, it breaks when using external cloud providers to host the app, e.g. AWS or Azure. Therefore, a workaround is necessary to pass the credentials correctly to the app. The documentation for this instruction is lacking. How I figured it out was through inspecting the type definitions of `admin.initialzeApp` (Note: I am using the `firebase-admin` NodeJs Sdk). So, here is the solution:
 

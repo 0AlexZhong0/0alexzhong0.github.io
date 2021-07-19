@@ -8,10 +8,10 @@ date: 2020-10-23T10:17:48.445Z
 description: First of the two-part Unit Test Now series where we give a
   high-level overview of common unit test scenarios and we provide some examples
   to help you get started today!
-category: software
+category: Software
 tags:
-  - unit test
-  - testing
+  - Unit Test
+  - Testing
 ---
 
 Assuming you have understood the importance of testing, (if not, Google "why is software testing important" and be overwhelmed with the answers) and you want to start testing your project today. However, sometimes we don't know how to begin. This article focuses on unit testing because unit tests make up the majority of the tests we write. 

@@ -8,10 +8,10 @@ date: 2021-03-20T21:41:40.493Z
 description: With over-the-air updates, it allows the engineers to develop
   mobile apps fast and iteratively just the web. The result is continuous
   improvements and better UX.
-category: software
+category: Software
 tags:
-  - react-native
-  - codepush
+  - React Native
+  - CodePush
 ---
 The documentation for Microsoft Codepush is quite messy, some are even deprecated or outdated, but after a few hours of researching, I finally finished setup and pushed my first OTA update using CodePush. Here I will share with you the lessons I have learnt.
 
