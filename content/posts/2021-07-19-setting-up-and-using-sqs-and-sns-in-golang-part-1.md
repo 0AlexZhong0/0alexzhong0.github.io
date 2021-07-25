@@ -3,7 +3,7 @@ template: post
 title: "Setting Up And Using SQS And SNS In Golang: Part One"
 slug: using-sqs-and-sns-in-golang-pt-1
 socialImage: /media/sheep-crowd.jpeg
-draft: true
+draft: false
 date: 2021-07-19T01:39:59.960Z
 description: >
   SQS and SNS are commonly used together to make a robust one-to-many messaging
@@ -24,28 +24,27 @@ tags:
 
 ## Why SQS and SNS?
 
-SQS stands for Simple Queue Service - a proprietary service implemented by AWS. In the programming context, a queue is something that you can push the data to and you can also poll messages from it one by one. For example, let's say Ken left a review for product on an e-commerce website. The app may possibly do the following things behind the scenes. Firstly, it creates an review for this product in the database. Secondly, the app notifies the seller via email that someone has left a review for them. Optionally, if this is the first review Ken has made in his account, the app creates a badge for him and notifies him via web push notification about the badge. As you can see, there are 4 possible actions the backend will proceed from one action in the client-side.
+SQS stands for Simple Queue Service - a proprietary service implemented by AWS. In the programming context, a queue is something that you can push the data to, and you can also poll messages from it one by one. For example, let's say Ken left a review for a product on an e-commerce website. The app may do the following things behind the scenes. Firstly, it creates a review for this product in the database. Secondly, the app notifies the seller via email that someone has left a review for them. Optionally, if this is the first review Ken has made in his account, the app creates a badge for him. It notifies him via web push notification about the badge. As you can see, there are four possible actions the backend will proceed from one action on the client-side.
 
-In the above scenario, **resiliency** of the app is a concern because if one action fails, the app will not perform the following operations. You may say, why don't you just retry the request from the client-side. This could also be problematic because that means in the backend, we need to check if a review by Ken for this product has already been created, if so, then we need to check if the email has been sent to the seller and so on and so forth. Our code can get messy quite quickly easily.
+In the above scenario, **resiliency** of the app is a concern because the app will not perform the following operations if one action fails. You may say, why don't you retry the request from the client-side? It could also be problematic because that means we need to check if Ken has already created a review for the product; if so, we need to check if we have sent the email to the seller. Our code can get messy quite quickly easily.
 
-This is where a queue comes to rescue. Instead of executing all actions at once, the app can push a message such as `{ event: "finsh_product_review", body: { productId: 4, reviewerId: 10 } }` to the queue, and the other service will start processing after polling the message. After the other service receive the `finish_product_review` event, the service can notify the seller about the review. A queue offers **resiliency** because it guarantees delivery of messages. Generally, a service deletes the message from the queue after a successful operation which is notifying the seller about the review in this case. However, if the service fails to process the message, then the service will continue to process the it until one of the following situation happens, as you can see from the [documentation](https://docs.aws.amazon.com/lambda/latest/operatorguide/sqs-retries.html):
+Queue comes to the rescue. Instead of executing all actions at once, the app can push a message such as `{ event: "finsh_product_review", body: { productId: 4, reviewed: 10 } }` to the queue, and the other service will start processing after polling the message. After the other service receives the `finish_product_review` event, the service can notify the seller about the review. A queue offers **resiliency** because it guarantees the delivery of messages. Generally, a service deletes the message from the queue after a successful operation, notifying the seller about the review. However, suppose the service fails to process the message. In that case, the service will continue to process it until one of the following situations happens, as you can see from the [documentation](https://docs.aws.amazon.com/lambda/latest/operatorguide/sqs-retries.html):
 
 > 1. The message is processed without any error from the function, and the service deletes the message from the queue.
-> 1. The Message retention period is reached and SQS deletes the message from the queue.
-> 1. There is a dead-letter queue (DLQ) configured and SQS sends the message to this queue. It’s best practice to enable a DLQ on an SQS queue to prevent any message loss.
+> 1. The Message retention period is reached, and SQS deletes the message from the queue.
+> 1. There is a dead-letter queue (DLQ) configured, and SQS sends the message to this queue. It's best practice to enable a DLQ on an SQS queue to prevent any message loss.
 
-SNS stands for Simple Notification Service, it is a pub/sub messaging service where the publisher can be any service and the subscriber can range from email, SMS, lambda and SQS etc.
+SNS stands for Simple Notification Service. It is a pub/sub messaging service where the publisher can be any service. The subscriber can range from email, SMS, lambda and SQS etc.
 
-Now let's take a look at why we choose to couple SQS and SNS together. I have adapted some great points from [this](https://stackoverflow.com/questions/13681213/what-is-the-difference-between-amazon-sns-and-amazon-sqs) awesome StackOverflow article.
+Now let's take a look at why we choose to couple SQS and SNS together, according to [this](https://stackoverflow.com/questions/13681213/what-is-the-difference-between-amazon-sns-and-amazon-sqs) excellent article from StackOverflow
 
-Why would someone choose to combine SNS and SQS, i.e. why not use SQS alone or SNS alone?
+> You don't have to couple SNS and SQS always. You can have SNS send messages to email, SMS or HTTP endpoint apart from SQS... By coupling SNS with SQS, you can receive messages at your pace. It allows clients to be offline, tolerant to network and host failures.
 
-Talk about what SQS and SNS are good at individually. What functionalities does SNS satisfy that SQS cannot do? And what problems does coupling SQS and SNS solve, i.e. what problems may you have if you only use SNS for example (refers to the rate at which you app or service receives the messages)? Conclude by saying coupling SQS and SNS together brings the benefits of both worlds.
+The combination of SNS and SQS gives you the best of both worlds because SNS allows you to publish messages to subscribers, such as mobile push and email endpoints. It will enable the same data to be processed by multiple subscribers. In contrast, a queue is suitable when only one receiver is present. Also, using SQS with SNS allows the application to receive the messages at its own pace, and you can achieve [fanout](https://en.wikipedia.org/wiki/Fan-out_(software)) pattern using the combination.
 
 ## Alternatives
 
-Talk about another blog post that I will write for technology comparisons.
-
+SNS and SQS are not the only technologies you can use for an event-driven architecture and achieve the things we mentioned above. Other alternatives widely adopted by the industry, such as **RabbitMQ** and **Kafka**. In an upcoming article, I will give a deep comparison between SQS, SNS, RabbitMQ and Kafka. In that article, I will dive deep and explain why SQS and SNS win in particular situations and when using RabbitMQ or Kafka is better.
 ## Setting up SNS from the console
 
 As mentioned above, SNS has a concept of topics where the publisher pushes the message to a topic. Then, the respective subscribers receive the messages from SNS. Let's see how to create an SNS topic.
