@@ -14,7 +14,8 @@ tags:
   - Engineering
   - Technology
 ---
-I helped Zorbi scale from 0 to 20k+ users in March 2022. I have designed the UI/UX flow, made technical architectural decisions and built every feature I showcase below. The list is not extensive but highlights the major features I have made. The code snippets in this article are in a private repo, feel free to DM me so I can add you to the repo.
+
+I helped Zorbi scale from 0 to 20k+ users in March 2022. I have designed the UI/UX flow, made technical architectural decisions and built every feature I showcase below. The list is not extensive but highlights the major features I have made. The code snippets in this article is from my [portfolio-work] repository (https://github.com/0xYao/portfolio-work).
 
 # Key Zorbi GitHub Metrics
 
