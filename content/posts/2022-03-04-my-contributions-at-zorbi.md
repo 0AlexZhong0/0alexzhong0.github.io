@@ -16,7 +16,7 @@ tags:
 ---
 I helped Zorbi scale from 0 to 20k+ users in March 2022. I have designed the UI/UX flow, made technical architectural decisions and built every feature I showcase below. The list is not extensive but highlights the major features I have made. The code snippets in this article are in a private repo, feel free to DM me so I can add you to the repo.
 
-# Key Zorbi GitHub Metrics
+# My Zorbi GitHub Metrics
 
 Note: the metrics are between July 2021 to March 2022 (8 months).
 
