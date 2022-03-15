@@ -5,9 +5,7 @@ slug: contributions-at-zorbi
 socialImage: https://lh3.googleusercontent.com/xxTrkjBvZrjWhb3MxhwDkWaUz5nWEbf9FAUF-1P00n6gkiDy3_bJ6J2Qo2ZE0SUU5ivsnnWktJ4Qq8J-cpH_qv3-=w128-h128-e365-rj-sc0x00ffffff
 draft: false
 date: 2022-03-04T21:55:13.862Z
-description: The technical contributions I have made to Zorbi - a flashcards app
-  that predicts when you will forget them. It has helped tens of thousands of
-  people improve their learning efficiency.
+description: I share with you my technical contributions I have made to Zorbi - a flashcards app that predicts when you will forget them. It has helped tens of thousands of people improve their learning efficiency.
 category: Software
 tags:
   - Startup
