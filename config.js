@@ -7,7 +7,7 @@ module.exports = {
   subtitle:
     'Blog of Alex Zhong, knowledge repository of a young software engineer.',
   copyright: '© All rights reserved by Alex Zhong.',
-  disqusShortname: '',
+  disqusShortname: 'zhongnotes',
   postsPerPage: 8,
   googleAnalyticsId: 'UA-180766639-1',
   useKatex: false,
@@ -27,8 +27,9 @@ module.exports = {
   ],
   author: {
     name: 'Alex Zhong',
-    photo: '/photo.jpg',
-    bio: 'Knowledge repository of a young software engineer.',
+    photo: '/linkedin.jpeg',
+    bio:
+      'I am a full-stack software engineer proficient in React, GraphQL, NodeJS and AWS. Currently, I am building an Ed-Tech and a Web3 startup.',
     contacts: {
       email: '0alexzhong0@gmail.com',
       facebook: '',
