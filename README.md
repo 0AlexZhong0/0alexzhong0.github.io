@@ -20,7 +20,7 @@
 - Disqus Comments.
 - [Flow](https://flow.org/) static type checking.
 
-## Quick Start
+## Quick Start Guide
 
 ### Start Developing
 
