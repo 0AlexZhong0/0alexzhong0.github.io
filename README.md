@@ -1,4 +1,4 @@
-## Outline
+## Table of contents
 
 - [Features](https://github.com/0alexzhong0/blog#features)
 - [Web Performance Tests](https://github.com/0alexzhong0/blog#web-performance-tests)
