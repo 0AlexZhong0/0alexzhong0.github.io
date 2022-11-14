@@ -16,7 +16,7 @@ tags:
 
 Recently, I decided to investigate the issues and optimise the deployment speed. Here are four areas of changes you can make to optimise your ECS service deployment speed.
 
-1. Load balancer health check parameters
+Area 1: Load balancer health check parameters
 
 The ECS task deployment will only succeed if it passes the load balancer health check. There are two important parameters here, HealthyThresholdCount (the amount of consecutive successful health check responses needed to consider the target as healthy) and HealthCheckIntervalSeconds (the amount of time between each health check).
 
@@ -24,7 +24,7 @@ By default, HealthyThresholdCount is 3, and HealthCheckIntervalSeconds is 30, so
 
 ![ECS load balancer health check](https://docs.aws.amazon.com/images/AmazonECS/latest/bestpracticesguide/images/load-balancer-healthcheck.png)
 
-2. Load balancer connection draining
+Area 2: Load balancer connection draining
 
 When you stop an ECS task, you will notice the task going into the draining state before the stopped state. The draining state is when the period when the ECS task tries to terminate the keep-alive connection with the load balancer. The ECS task maintains the keep-alive connection with the load balancer so it can reuse the connection for receiving a request and sending a response to the load balancer.
 
@@ -32,7 +32,7 @@ There is a parameter named DeregistrationDelay, the amount of time the load bala
 
 ![ECS task load balancer connection draining](https://docs.aws.amazon.com/images/AmazonECS/latest/bestpracticesguide/images/load-balancer-connection-draining.png)
 
-3. Container image pull behavior
+Area 3: Container image pull behavior
 
 Fargate tasks don't cache the Docker images. Consider the following methods to speed up the image pulling speed.
 
@@ -40,8 +40,7 @@ Fargate tasks don't cache the Docker images. Consider the following methods to s
 - Use a smaller base image.
 - Store the image in the same region as the task.
 
-
-4. Task deployment
+Area 4: Task deployment
 
 In your deployment configuration, the minimumHealthyPercent parameter is the minimum percent of the number of desired tasks that should be in the RUNNING state and maximumPercent is the maximum percent of the number of desired tasks should be either in the RUNNING or PENDING state.
 
@@ -56,7 +55,7 @@ There is a 2.5-minute wait for each task that starts, and the load balancer need
 
 Suppose some of your tasks don’t have a high utilisation rate. In that case, you can adjust minimumHealthyPercent to 50%, so the above example will deregister a task and create three new tasks in the beginning, which speeds up the deployment significantly.
 
-5. Bonus point: when you update the ECS service, the service will need to register a new ECS task, and the task then pulls a fresh Docker image, and the service waits for the task to pass the load balancer health check out etc. All of these could take up to a few minutes. You can avoid this by including some logic in your application that pulls the latest code from your git repository, build the code, and restart the server itself. You encapsulate the logic inside an API endpoint, and only you are authorised to hit this API endpoint.
+Bonus point: when you update the ECS service, the service will need to register a new ECS task, and the task then pulls a fresh Docker image, and the service waits for the task to pass the load balancer health check out etc. All of these could take up to a few minutes. You can avoid this by including some logic in your application that pulls the latest code from your git repository, build the code, and restart the server itself. You encapsulate the logic inside an API endpoint, and only you are authorised to hit this API endpoint.
 
 Implementing the above optimising methods reduced my ECS deployment time from 10-12 minutes to 3-6 minutes.
 
