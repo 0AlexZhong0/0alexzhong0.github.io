@@ -1,6 +1,6 @@
 ---
 template: post
-title: My Work at Zorbi so far
+title: My Work at Zorbi So Far
 slug: contributions-at-zorbi-so-far
 socialImage: https://lh3.googleusercontent.com/xxTrkjBvZrjWhb3MxhwDkWaUz5nWEbf9FAUF-1P00n6gkiDy3_bJ6J2Qo2ZE0SUU5ivsnnWktJ4Qq8J-cpH_qv3-=w128-h128-e365-rj-sc0x00ffffff
 draft: false

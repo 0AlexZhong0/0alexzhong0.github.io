@@ -1,6 +1,6 @@
 ---
 template: post
-title: Improve ECS deployment speed by over 50%
+title: Improve ECS Deployment Speed By Over 50%
 slug: improve-ecs-deployment-speed
 socialImage: https://miro.medium.com/max/761/1*0XaVw5RxRmdYC6urU010-A.png
 draft: false
@@ -34,9 +34,12 @@ There is a parameter named DeregistrationDelay, the amount of time the load bala
 
 3. Container image pull behavior
 
-- A new ECS task needs to pull a fresh Docker image over the network before running. The more vCPUs a task has, the more network bandwidth it has. Hence it can pull the Docker image faster. The minimum 0.25 vCPUs is enough for pulling images under 500MB, and 0.5 vCPUs to 1 vCPUs is sufficient for pulling images between 500MB - 1.5GB.
+Fargate tasks don't cache the Docker images. Consider the following methods to speed up the image pulling speed.
+
+- A new ECS task needs to pull a fresh Docker image over the network before running. The more vCPUs a task has, the more network bandwidth it has. Hence it can pull the Docker image faster. The minimum 0.25 vCPUs is enough for pulling images under 500MB, and 0.5 vCPUs to 1 vCPUs is sufficient for pulling images between 500MB to 1.5GB.
 - Use a smaller base image.
 - Store the image in the same region as the task.
+
 
 4. Task deployment
 
