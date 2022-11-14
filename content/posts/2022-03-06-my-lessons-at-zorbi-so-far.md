@@ -1,7 +1,7 @@
 ---
 template: post
 title: My Lessons at Zorbi So Far
-slug: lessons-at-zorbi
+slug: lessons-at-zorbi-so-far
 socialImage: https://play-lh.googleusercontent.com/dY-vEHXrhOXuEqoQEvlzsP5yFkbwujvYh9dQZR_XvKcCYV3lyq_Am-v70TAFuMxFSw
 draft: false
 date: 2022-03-15T05:21:11.478Z
